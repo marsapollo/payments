@@ -1,0 +1,65 @@
+// Constants
+@grey: #dfdfdf;
+@white: white;
+@padding: 15px;
+@margin: 15px;
+@radius: 5px;
+
+// Mixens
+.border(@color, @size: 1px, @style: solid) {
+	border-bottom: @color @size @style;
+	// border-radius: @radius;
+}
+
+// Extra Small
+@media screen and (max-width: 767px) {
+	.container {
+		.invoice {
+			padding-top: @padding;
+		}
+	}
+}
+
+// Small		
+@media screen and (min-width: 768px) {
+	body {
+		background: @grey;
+	}
+	.container {
+		width: 750px;
+		margin-top: @margin;
+		background: @white;
+		// .border(darken(@grey, 10%));
+		padding: @padding;
+		.head {
+			font-size: 24px;
+			font-weight: bold;
+		}
+		.row {
+			margin-bottom: @margin;
+		}
+	}
+}
+
+// Medium
+@media screen and (min-width: 992px) {}
+
+// Large
+@media screen and (min-width: 1200px) {}
+
+// Print
+@media print {
+	.hidden-print {
+		display:none;
+	}
+	.text-right, .pull-right {
+		float: right;
+		text-align: right;
+	}
+	.conatiner {
+		.head {
+			font-size: 24px;
+			font-weight: bold;
+		}
+	}
+}

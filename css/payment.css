@@ -1,0 +1,36 @@
+@media screen and (max-width: 767px) {
+  .container .row img {
+    max-width: 250px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container .row {
+    border-bottom: #c6c6c6 1px solid;
+  }
+  .container .row img {
+    max-width: 500px;
+  }
+  .container .row.hidden-print {
+    border: none;
+  }
+}
+@media print {
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+  .container .row {
+    border-bottom: #000000 1px solid;
+  }
+  .container .row .head {
+    font-size: 22px;
+    font-weight: bold;
+  }
+  .container .row .text-center {
+    text-align: center;
+  }
+  .container .row .text-center img {
+    max-width: 500px;
+    margin: 15px;
+  }
+}
