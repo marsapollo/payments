@@ -34,7 +34,7 @@
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
-		<?php include('inc/nav.php'); ?>
+		<?php include('template/nav.php'); ?>
 		<div class="container">
 			<form action="inc/updatepay.php" method="POST" role="form" enctype="multipart/form-data">
 				<legend>Edit Payment</legend>

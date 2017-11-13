@@ -1,3 +1,5 @@
+<?php error_reporting(1); ?>
+
 <?php include('template/head.php') ?>
 
 	<?php 

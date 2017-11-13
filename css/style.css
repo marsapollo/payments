@@ -10,7 +10,7 @@
   .container {
     width: 750px;
     margin-top: 15px;
-    background: #ffffff;
+    background: white;
     padding: 15px;
   }
   .container .head {
@@ -22,6 +22,9 @@
   }
 }
 @media print {
+  .row {
+    font-size: 14px !important;
+  }
   .hidden-print {
     display: none;
   }
